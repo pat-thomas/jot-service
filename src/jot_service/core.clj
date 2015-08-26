@@ -4,7 +4,6 @@
 
 (defn app
   [req]
-  (def req req)
   {:status  200
    :headers {"Content-Type" "application/json"}
    :body    (json/generate-string {:message "Pong!"})})
